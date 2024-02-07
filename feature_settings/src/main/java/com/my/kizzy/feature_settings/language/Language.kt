@@ -46,8 +46,8 @@ fun Language(
             item {
                 PreferenceSingleChoiceItem(
                     text = stringResource(R.string.follow_system),
-                    selected = locale == SYSTEM_DEFAULT
-                ) { changeLanguage(SYSTEM_DEFAULT) }
+                    selected = locale == LANGUAGES.SYSTEM_DEFAULT.ordinal
+                ) { changeLanguage(LANGUAGES.SYSTEM_DEFAULT.ordinal) }
             }
             for (language in languages) {
                 item {
