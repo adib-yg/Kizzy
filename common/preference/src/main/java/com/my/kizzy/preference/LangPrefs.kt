@@ -18,23 +18,26 @@ import androidx.compose.ui.res.stringResource
 import androidx.core.os.LocaleListCompat
 import com.my.kizzy.resources.R
 
-// Languages Index number
-const val SYSTEM_DEFAULT = 0
-private const val ENGLISH = 1
-private const val TURKISH = 2
-private const val DUTCH = 3
-private const val RUSSIAN = 4
-private const val POLISH = 5
-private const val PORTUGUESE = 6
-private const val INDONESIAN = 7
-private const val SIMPLIFIED_CHINESE = 8
-private const val BURMESE = 9
-private const val VIETNAMESE = 10
-private const val ITALIAN = 11
-private const val FILIPINO = 12
-private const val FRENCH = 13
-private const val CROATIAN = 14
-private const val FARSI = 15
+// Languages
+enum class LANGUAGES
+{
+    SYSTEM_DEFAULT,
+    ENGLISH,
+    TURKISH,
+    DUTCH,
+    RUSSIAN,
+    POLISH,
+    PORTUGUESE,
+    INDONESIAN,
+    SIMPLIFIED_CHINESE,
+    BURMESE,
+    VIETNAMESE,
+    ITALIAN,
+    FILIPINO,
+    FRENCH,
+    CROATIAN,
+    FARSI
+}
 
 val languages: Map<Int, String> =
     mapOf(
